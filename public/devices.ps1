@@ -491,7 +491,7 @@ https://github.com/crowdstrike/psfalcon/wiki/Invoke-FalconHostAction
     [Alias('action_name')]
     [string]$Name,
     [Parameter(ParameterSetName='/devices/entities/devices-actions/v2:post',Position=2)]
-    [ValidateSet('agent_version','cid','external_ip','first_seen','host_hidden_status','hostname',
+    [ValidateSet('agent_version','cid','external_ip','filesystem_containment_status','first_seen','host_hidden_status','hostname',
       'last_seen','local_ip','mac_address','os_build','os_version','platform_name','product_type',
       'product_type_desc','reduced_functionality_mode','serial_number','system_manufacturer',
       'system_product_name','tags',IgnoreCase=$false)]
