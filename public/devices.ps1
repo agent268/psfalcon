@@ -486,7 +486,7 @@ https://github.com/crowdstrike/psfalcon/wiki/Invoke-FalconHostAction
   [CmdletBinding(DefaultParameterSetName='/devices/entities/devices-actions/v2:post',SupportsShouldProcess)]
   param(
     [Parameter(ParameterSetName='/devices/entities/devices-actions/v2:post',Mandatory,Position=1)]
-    [ValidateSet('contain','lift_containment','hide_host','unhide_host','detection_suppress',
+    [ValidateSet('contain','lift_containment','lift_filesystem_containment_all','hide_host','unhide_host','detection_suppress',
       'detection_unsuppress',IgnoreCase=$false)]
     [Alias('action_name')]
     [string]$Name,
